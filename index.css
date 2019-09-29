@@ -1,0 +1,202 @@
+*{
+    margin: 0;
+}
+@import url('https://fonts.googleapis.com/css?family=Roboto:100&display=swap');
+.attribution { font-size: 11px; text-align: center; }
+.attribution a { color: hsl(228, 45%, 44%); }
+
+.container{
+    display:grid;
+    grid-template-rows: 50vh 50vh;       
+}
+
+body{
+    background-color: #674bb1;
+    color: white;
+    font-family: 'Roboto',sans-serif;
+}
+
+
+#imgFundoDesk{
+    display: none;
+}
+
+#imgFundo{
+    position: relative;
+    bottom: 0px;
+    width: 100%;
+}
+#logoHuddle{
+    position: absolute;
+    width: 40vw;
+    left: 5vh;
+    top: 5vw;
+}
+
+#imgIlustre{
+    position: absolute;
+    left: 5vh;
+    width: 80vw;
+    top: 33vw;
+}
+
+.divLeft h1,p{
+    text-align: center;
+}
+
+.divLeft h1{
+    position: relative;
+    margin-bottom: 2vh;
+}
+
+#btnRegister{
+    position: relative;
+    top: 5vh;
+    left: 25vw;
+    color: #674bb1;
+    height: 5vh;
+    width: 50vw;
+    font-size: 1em;
+    background-color: white;
+    box-shadow: 0 1px 3px black;
+    border-radius: 20px;
+    margin-bottom: 15%;
+    border: none;    
+}
+
+.divIcon{
+    position: relative;
+    left: 20vw;
+    margin-bottom: 10%;
+}
+
+.divIcon a{
+    display: inline-block;    
+    margin-left: 10px;    
+}
+
+.divIcon img{
+    padding: auto;
+    height: 10vw;
+    padding: 10px;
+}
+
+@media screen and (min-width:400px){
+    
+    .container{
+        grid-template-rows: 63vh 50vh;
+    } 
+       
+    #imgIlustre{
+        width: 80vw;
+        left: 10vw;   
+    }
+}
+
+@media screen and (min-width:500px){
+    .divLeft{
+        margin-top: 20%;
+    }
+
+    #imgIlustre{
+        left: 8vh;;   
+    }
+}
+
+@media screen and (min-width:600px){
+    .container{
+        grid-template-rows: 80vh 50vh;
+    }   
+}
+
+@media screen and (min-width:700px){
+    .container{
+        grid-template-rows: 80vh 60vh;
+    }
+
+    .divLeft h1 {
+        bottom: 15vh;
+    }
+    
+    .divLeft p {
+        position: relative;
+        bottom: 15vh;        
+    }
+
+    #btnRegister{
+        top: auto;        
+        bottom: 8vh;
+    }
+
+    .divIcon{
+        left: 27vw;
+        bottom: 15vh;
+    }
+    
+}
+
+@media screen and (min-width:1000px){
+    .container{
+        grid-template-columns: 50% 20vw;
+        grid-template-rows: auto;       
+    }
+    
+    #logoHuddle{
+        left: 1vh;
+        top: 5vh;
+        width: 15vw;
+    }
+
+    #imgFundo{
+        display: none;
+    }
+    #imgFundoDesk{
+        display: block;
+        width: 81vw;
+    }
+
+    #imgIlustre{
+        top: 23vh;
+        width: 45vw;
+    }
+
+    .divLeft h1{
+        text-align: left;
+        font-size: 3em;
+        width: 40vw;
+        top: 20vh;
+    }
+
+    .divLeft p {
+        position: relative;
+        text-align: left;
+        width: 35vw;
+        font-size: 1.2vw;
+        top: 20vh;
+    }
+
+    #btnRegister{
+        top: 25vh;
+        left: 0vw;
+        height: 6vh;
+        width: 15vw;
+    }
+
+    .attribution{
+        position: absolute;
+        left: 1vw;
+        top: 90vh;
+    }
+
+    .divIcon{
+        top: 40vh;
+        left: 28vw;
+    }
+
+    .divIcon img{
+        padding: auto;
+        height: 3vw;
+        padding: 10px;
+    }
+    
+}
